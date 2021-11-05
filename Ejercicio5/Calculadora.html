@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calculadora RPN - Inicio</title>
+    <script src="calculadoraRPN.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <form action="">
+        <label for="pantalla"> Pila de la calculadora</label> <br>
+            <textarea id="pantalla" cols="50" rows="10" readonly></textarea><br>
+
+        <input type="button" value = "1" onclick="calculadora.añadir(1);document.getElementById('pantalla').value = calculadora.mostrarPila()">
+        <input type="button" value = "2" onclick="calculadora.añadir(2);document.getElementById('pantalla').value = calculadora.mostrarPila()">
+        <input type="button" value = "3" onclick="calculadora.añadir(3);document.getElementById('pantalla').value = calculadora.mostrarPila()">
+        <input type="button" value = "4" onclick="calculadora.añadir(4);document.getElementById('pantalla').value = calculadora.mostrarPila()">
+        
+        <input type="button" value = "+" onclick="calculadora.sumar();document.getElementById('pantalla').value = calculadora.mostrarPila()">
+        <input type="button" value = "-" onclick="calculadora.restar();document.getElementById('pantalla').value = calculadora.mostrarPila()">
+    </form>
+    
+    <footer>
+        <a href="http://validator.w3.org/check/referer"> <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+    </footer>
+</body>
+</html>
