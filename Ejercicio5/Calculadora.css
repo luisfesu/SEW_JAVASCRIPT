@@ -19,6 +19,7 @@ body {
 }
 
 section {
+
   display: grid;
   align-items: stretch;
   background-color: #e08e53;
@@ -35,6 +36,7 @@ section {
   grid-row-start: auto;
 
   
+  border-radius: 1.45em;
 }
 article {
     color: #000;
@@ -95,6 +97,9 @@ form textarea {
   grid-column-end: span 4;
 
   grid-row: 2 2;
+
+  
+  border-radius: 0.85em;
 }
 
 /*Especifidad: 012 */
@@ -114,7 +119,7 @@ form textarea:last-of-type {
 input[type="button"] {
   background-color: #444;
   color: #fff;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
   padding: 0.25em;
   font-size: 150%;
 }
