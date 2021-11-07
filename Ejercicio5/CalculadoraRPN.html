@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora RPN - Inicio</title>
+    <script src="Calculadora.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Calculadora.css">
+</head>
+
+<body>
+    <article>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nobis sunt voluptatem a nostrum natus aut blanditiis perspiciatis beatae ab asperiores aliquam neque aperiam, delectus necessitatibus accusantium fugiat fuga nisi.
+        </p>
+    </article>
+    <section>
+
+        <form action="">
+            <label for="pantalla"> Pila de la calculadora</label>
+            <textarea id="pantalla" cols="50" rows="10" readonly></textarea>
+            <label for="pantalla-input">Input:</label>
+            <textarea id="pantalla-input" cols="5" rows="1" readonly></textarea>
+
+            <input type="button" value="sen" onclick="   calculadora.seno();
+            calculadora.mostrarPilaEnPantalla('pantalla');
+            calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="cos" onclick="   calculadora.coseno();
+             calculadora.mostrarPilaEnPantalla('pantalla');
+             calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="tan" onclick="   calculadora.tangente();
+              calculadora.mostrarPilaEnPantalla('pantalla');
+              calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="AC" onclick="   calculadora.borrarTodo();
+            calculadora.mostrarPilaEnPantalla('pantalla');
+            calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <input type="button" value="asen" onclick="   calculadora.arcoseno();
+              calculadora.mostrarPilaEnPantalla('pantalla');
+              calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="acos" onclick="   calculadora.arcocoseno();
+              calculadora.mostrarPilaEnPantalla('pantalla');
+              calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="atan" onclick="   calculadora.arcotangente();
+              calculadora.mostrarPilaEnPantalla('pantalla');
+              calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="C" onclick="   calculadora.borrar();
+               calculadora.mostrarPilaEnPantalla('pantalla');
+               calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <!-- Row One-->
+            <input type="button" value="7"
+                onclick="calculadora.añadir(7);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="8"
+                onclick="calculadora.añadir(8);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="9"
+                onclick="calculadora.añadir(9);calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <input type="button" value="/" onclick="   calculadora.dividir();
+                            calculadora.mostrarPilaEnPantalla('pantalla');
+                            calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <!-- Row Two-->
+            <input type="button" value="4"
+                onclick="calculadora.añadir(4);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="5"
+                onclick="calculadora.añadir(5);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="6"
+                onclick="calculadora.añadir(6);calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <input type="button" value="*" onclick="   calculadora.multiplicar();
+                            calculadora.mostrarPilaEnPantalla('pantalla');
+                            calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <!-- Row Three-->
+            <input type="button" value="1"
+                onclick="calculadora.añadir(1);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="2"
+                onclick="calculadora.añadir(2);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="3"
+                onclick="calculadora.añadir(3);calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <input type="button" value="-" onclick="   calculadora.restar();
+                        calculadora.mostrarPilaEnPantalla('pantalla');
+                        calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+            <!-- Row Three-->
+            <input type="button" value="0"
+                onclick="calculadora.añadir(0);calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="."
+                onclick="calculadora.añadirDecimal();calculadora.mostrarInputEnPantalla('pantalla-input')">
+            <input type="button" value="+" onclick="   calculadora.sumar();
+                            calculadora.mostrarPilaEnPantalla('pantalla');
+                            calculadora.mostrarInputEnPantalla('pantalla-input')">
+
+
+            <input type="button" value="Enter" onclick="   calculadora.enter();
+                            calculadora.mostrarPilaEnPantalla('pantalla'); 
+                            calculadora.mostrarInputEnPantalla('pantalla-input')">
+        </form>
+
+    </section>
+
+    <footer>
+        <a href="http://validator.w3.org/check/referer"> <img src="HTML5.png" alt=" HTML5 Válido!" /></a>
+    </footer>
+</body>
+
+</html>
