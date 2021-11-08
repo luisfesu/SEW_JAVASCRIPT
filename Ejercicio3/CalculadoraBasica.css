@@ -7,7 +7,7 @@ body {
 body {
   display: grid;
 
-  grid-template-columns: auto 90vw auto;
+  grid-template-columns: auto 85vw auto;
   grid-template-rows: auto;
 
   
@@ -29,8 +29,7 @@ section {
   min-width: 50vmin;
 
   max-width: clamp(50rem, 90vmax, 55rem);
-  max-height: 90vh;
-
+  max-height: 85%;
   grid-column-start: 2;
   grid-row-start: auto;
 
@@ -61,6 +60,8 @@ form label {
 
   grid-column-start: 1;
   grid-column-end: span 4;
+
+  font-size: 125%;
 
   grid-row-start: 1;
   place-self: center;
@@ -111,11 +112,4 @@ footer {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row-end: span 2;
-}
-
-@media (min-width: 0px) and (max-width: 649px ) {
-   section {
-       justify-self: stretch;
-       min-width: 97%;
-   } 
 }
