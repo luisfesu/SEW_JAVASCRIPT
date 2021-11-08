@@ -1,18 +1,121 @@
+html,
 body {
-    margin: 2em;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: grid;
+
+  grid-template-columns: auto 90vw auto;
+  grid-template-rows: auto;
+
+  
+  font-family: Tahoma, sans-serif;
+
+  color: #fff;
+  background-color: #fff;
+
+  padding: 2em;
 }
 
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.25em;
-    background-color: tomato;
+  display: grid;
+  align-items: stretch;
+  background-color: #e08e53;
+  padding: 1.4em;
+
+  justify-self: center;
+  min-width: 50vmin;
+
+  max-width: clamp(50rem, 90vmax, 55rem);
+  max-height: 90vh;
+
+  grid-column-start: 2;
+  grid-row-start: auto;
+
+  border-radius: 1.45em;
+}
+article {
+  color: #000;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
-button {
-    background-color: #444;
-    color: #fff;
-    border-radius: 0.3em;
-    padding: .25em;
-    font-size: 150%;
+form {
+  min-height: 100%;
+
+  max-width: 100%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.3fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-gap: 0.1em;
+
+  grid-column: 2 2;
+}
+
+form label {
+  text-align: center;
+
+  grid-column-start: 1;
+  grid-column-end: span 4;
+
+  grid-row-start: 1;
+  place-self: center;
+}
+
+form textarea {
+  resize: none;
+  overflow:hidden;
+
+  justify-self: stretch;
+
+  background-color: #fcd0a7;
+
+  grid-column-start: 1;
+  grid-column-end: span 4;
+
+  grid-row-start: 2;
+
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+
+  text-align: right;
+font-size: 2rem;
+
+  border-radius: 0.85em;
+}
+
+/*Especifidad: 011 */
+input[type="button"] {
+  background-color: #444;
+  color: #fff;
+  border-radius: 0.5em;
+  padding: 0.25em;
+  
+}
+
+/*Especifidad: 011 */
+input[value$="C"] {
+  background-color: #292929;
+}
+
+/*Especifidad: 021 */
+input[type="button"]:last-of-type {
+  background-color: #bf3b3b;
+}
+
+footer {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+
+@media (min-width: 0px) and (max-width: 649px ) {
+   section {
+       justify-self: stretch;
+       min-width: 97%;
+   } 
 }

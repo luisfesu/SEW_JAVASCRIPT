@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Ejercicio 3</title>
-        
-        <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css">
 
-    </head>
-    <body>
-        
-        <section>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-            <button>
-                1
-            </button>
-        </section>
-        
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3</title>
+
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css">
+
+    <script src="CalculadoraBasica.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <label for="screen">Calculadora estandard</label>
+            <textarea name="screen" id="screen" cols="20" rows="1" disabled></textarea>
+
+
+            <input type="button" value="mrc" onclick="">
+            <input type="button" value="m-" onclick="">
+            <input type="button" value="m+" onclick="">
+            <input type="button" value="/" onclick="">
+
+            <input type="button" value="7" onclick="calculadora.add(7); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="8" onclick="">
+            <input type="button" value="9" onclick="">
+            <input type="button" value="*" onclick="">
+
+            <input type="button" value="4" onclick="">
+            <input type="button" value="5" onclick="">
+            <input type="button" value="6" onclick="">
+            <input type="button" value="-" onclick="">
+
+            <input type="button" value="1" onclick="">
+            <input type="button" value="2" onclick="">
+            <input type="button" value="3" onclick="">
+            <input type="button" value="+" onclick="">
+
+            <input type="button" value="0" onclick="">
+            <input type="button" value="." onclick="">
+            <input type="button" value="C" onclick="">
+            <input type="button" value="=" onclick="">
+
+        </form>
+
+    </section>
+
+
+</body>
+
 </html>
