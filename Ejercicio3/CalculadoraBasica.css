@@ -10,7 +10,7 @@ body {
   grid-template-columns: auto 85vw auto;
   grid-template-rows: auto;
 
-  
+
   font-family: Tahoma, sans-serif;
 
   color: #fff;
@@ -35,6 +35,7 @@ section {
 
   border-radius: 1.45em;
 }
+
 article {
   color: #000;
   grid-column-start: 2;
@@ -69,12 +70,11 @@ form label {
 
 form textarea {
   resize: none;
-  overflow:hidden;
+  overflow: hidden;
 
   justify-self: stretch;
 
   background-color: #fcd0a7;
-
   grid-column-start: 1;
   grid-column-end: span 4;
 
@@ -84,18 +84,20 @@ form textarea {
   margin-bottom: 0.45em;
 
   text-align: right;
-font-size: 2rem;
+  font-size: 2rem;
 
-  border-radius: 0.85em;
+  border-radius: 0.15em;
 }
 
 /*Especifidad: 011 */
 input[type="button"] {
   background-color: #444;
   color: #fff;
-  border-radius: 0.5em;
+  border-radius: 0.85em;
   padding: 0.25em;
-  
+
+  margin: 0.5em;
+
 }
 
 /*Especifidad: 011 */

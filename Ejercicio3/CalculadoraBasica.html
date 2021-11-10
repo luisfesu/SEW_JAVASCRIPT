@@ -20,30 +20,30 @@
             <textarea name="screen" id="screen" cols="20" rows="1" disabled></textarea>
 
 
-            <input type="button" value="mrc" onclick="">
-            <input type="button" value="m-" onclick="">
-            <input type="button" value="m+" onclick="">
-            <input type="button" value="/" onclick="">
+            <input type="button" value="mrc" onclick="calculadora.memToScreen(); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="m-" onclick="calculadora.substractFromMem()">
+            <input type="button" value="m+" onclick="calculadora.addToMem()">
+            <input type="button" value="/" onclick="calculadora.operacion('/'); calculadora.mostrarEnPantalla('screen')">
 
             <input type="button" value="7" onclick="calculadora.add(7); calculadora.mostrarEnPantalla('screen')">
-            <input type="button" value="8" onclick="">
-            <input type="button" value="9" onclick="">
-            <input type="button" value="*" onclick="">
+            <input type="button" value="8" onclick="calculadora.add(8); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="9" onclick="calculadora.add(9); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="*" onclick="calculadora.operacion('*'); calculadora.mostrarEnPantalla('screen')">
 
-            <input type="button" value="4" onclick="">
-            <input type="button" value="5" onclick="">
-            <input type="button" value="6" onclick="">
-            <input type="button" value="-" onclick="">
+            <input type="button" value="4" onclick="calculadora.add(4); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="5" onclick="calculadora.add(5); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="6" onclick="calculadora.add(6); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="-" onclick="calculadora.operacion('-'); calculadora.mostrarEnPantalla('screen')">
 
-            <input type="button" value="1" onclick="">
-            <input type="button" value="2" onclick="">
-            <input type="button" value="3" onclick="">
-            <input type="button" value="+" onclick="">
+            <input type="button" value="1" onclick="calculadora.add(1); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="2" onclick="calculadora.add(2); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="3" onclick="calculadora.add(3); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="+" onclick="calculadora.operacion('+'); calculadora.mostrarEnPantalla('screen')">
 
-            <input type="button" value="0" onclick="">
-            <input type="button" value="." onclick="">
-            <input type="button" value="C" onclick="">
-            <input type="button" value="=" onclick="">
+            <input type="button" value="0" onclick="calculadora.add(0); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="." onclick="calculadora.addDecimal(); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="C" onclick="calculadora.clear(); calculadora.mostrarEnPantalla('screen')">
+            <input type="button" value="=" onclick="calculadora.igual()">
 
         </form>
 
