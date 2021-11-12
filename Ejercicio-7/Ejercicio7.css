@@ -1,0 +1,48 @@
+/* Especifidad: 011 */
+section:first-of-type {
+
+    display: grid;
+    grid-template-columns: auto;
+
+
+
+}
+
+section > h3 {
+    grid-row: 1 1;
+}
+
+section > form {
+    grid-row-start: 3;
+    justify-self: center;
+    margin: 0.3em;
+}
+
+
+section > article {
+    grid-column-start: auto;
+    grid-row-start: 2;
+
+    padding: 0.5em;
+}
+
+section > article:last-of-type {
+    grid-column-start: -1;
+}
+
+
+
+section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: auto;
+}
+section:nth-of-type(2) > form {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+section:nth-of-type(2) > article {
+    grid-column-start: auto;
+    grid-row-start: 2;
+
+    padding: 0.5em;
+}

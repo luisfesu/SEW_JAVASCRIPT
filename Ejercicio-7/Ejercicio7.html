@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio 7</h1>
+        <section>
+            <h2>Tarea 1</h2>
+
+            <article id="article-1">
+                <h3>Elemento 1</h3> 
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis facere repellendus, maiores tempore eos, vero necessitatibus ipsam voluptatibus repellat ipsum dolor sit corrupti inventore rem eligendi! A, perspiciatis ut.
+                </p>
+                
+            </article>
+            <form >
+                <input type="button" value="Ocultar Elemento 1" onclick="jqHelper.ocultar('article-1')">
+                <input type="button" value="Mostrar Elemento 1" onclick="jqHelper.mostrar('article-1')">
+            </form>
+
+            <article id="article-2">
+                <h3>Elemento 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, molestias laudantium? Tempore voluptatem porro aperiam alias explicabo a provident vel libero ipsa velit animi esse, autem ullam voluptatum quibusdam error!
+                </p>
+            </article>
+            <form >
+                <input type="button" value="Ocultar Elemento 2" onclick="jqHelper.ocultar('article-2')">
+                <input type="button" value="Mostrar Elemento 2" onclick="jqHelper.mostrar('article-2')">
+            </form>
+        </section>
+
+
+        <section>
+            <h2>Tarea 2</h2>
+            <article>
+                <h3>Elemento Modificable</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit laudantium harum nobis esse eius, voluptatum ab temporibus aut eligendi iure fuga enim consectetur provident iste quibusdam quam qui pariatur quidem!
+                </p>
+            </article>
+
+            <form >
+                <textarea name="input" id="input" cols="30" rows="10"></textarea>
+            </form>
+        </section>
+    </header>
+</body>
+</html>
