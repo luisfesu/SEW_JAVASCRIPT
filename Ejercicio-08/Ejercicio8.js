@@ -6,18 +6,16 @@ class Meteorologia {
         this.codigoPais = "ES";
         this.unidades = "&units=metric";
         this.idioma = "&lang=es";
-        this.correcto = "Archivo JSON satisfactoriamente recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
         this.iconBaseUrl = "https://openweathermap.org/img/w/";
     }
 
-    getUrl(ciudad) {
+    getUrlForCiudad(ciudad) {
         return this.url = "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apiKey;
     }
 
     cargarDatos(ciudad, element_ip){
 
-        let url = this.getUrl(ciudad);
-        let icon; 
+        let url = this.getUrlForCiudad(ciudad);
 
         $.ajax({
             dataType: "json",
@@ -25,7 +23,8 @@ class Meteorologia {
             method: 'GET',
             success: function(datos){
                     //Presentación de los datos contenidos en JSON
-                    
+                    let icon= datos.weather[0].icon;
+
                     let stringDatos = "<ul><li>Ciudad: " + datos.name + "</li>";
                         stringDatos += "<li>País: " + datos.sys.country + "</li>";
                         stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
@@ -39,23 +38,18 @@ class Meteorologia {
                         stringDatos += "<li>Hora de la medida: " + new Date(datos.dt *1000).toLocaleTimeString() + "</li>";
                         stringDatos += "<li>Fecha de la medida: " + new Date(datos.dt *1000).toLocaleDateString() + "</li>";
                         stringDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
-                        stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
                         stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
                     
                     $(element_ip).html(stringDatos);
 
-                    icon = datos.weather[0].icon;
-                    
-                },
+                    $(element_ip).parent().find("img").attr("src",  "https://openweathermap.org/img/w/" + icon + ".png");
+            },
             error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
-                $("h4").remove();
-                $("pre").remove();
-                $("p").remove();
-                }
+                $("h2").html("¡Tenemos problemas! No puedo obtener JSON de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
+            }
         });
 
-        $(element_ip).parent().find("img").attr("src", this.iconBaseUrl + icon + ".png");
+       
     }
 }
 

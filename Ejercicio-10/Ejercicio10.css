@@ -1,0 +1,33 @@
+/*Especifidad: 001*/
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+/*Especifidad: 001*/
+main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+/*Especifidad: 001*/
+section {
+
+    background-color: #fcfce6;
+
+    border: 0.12em solid #bdbdbd;
+    margin: 0.45em;
+    border-radius: 0.30em;
+
+    grid-row-start: 1;
+    grid-column-start: auto;
+
+    place-items: center;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+} 
+
+/*Especifidad: 002*/
+section h4, p {
+    color: #1b7d02;
+}

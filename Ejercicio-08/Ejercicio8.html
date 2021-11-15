@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,8 @@
 
     <link rel="stylesheet" href="Ejercicio8.css">
 </head>
-<body  onload="meteo.cargarDatos('Gijon', '#ciudad-1');">
+
+<body onload="meteo.cargarDatos('Gijon', '#ciudad-1'); meteo.cargarDatos('Oviedo', '#ciudad-2');">
     <header>
         <h1>Ejercicio 8</h1>
     </header>
@@ -18,8 +20,15 @@
     <section>
         <h2>Datos de Gijon</h2>
         <img src="" alt="Icono weather Gijon" />
-        <p id="ciudad-1" ></p>
+        <p id="ciudad-1"></p>
     </section>
-    
+
+    <section>
+        <h2>Datos de Oviedo</h2>
+        <img src="" alt="Icono weather Gijon" />
+        <p id="ciudad-2"></p>
+    </section>
+
 </body>
+
 </html>

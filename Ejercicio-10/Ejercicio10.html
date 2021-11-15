@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Ejercicio 10</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio10.js"></script>
+
+    <link rel="stylesheet" href="Ejercicio10.css">
+</head>
+
+<body onload="
+        goldPrice.llamadasRestantes('#a1'); 
+        goldPrice.cargarDatos('#s1', 'EUR'); 
+        goldPrice.cargarDatos('#s2', 'USD');
+    ">
+
+    <header>
+        <h1>Ejercicio 10</h1>
+    </header>
+    <main>
+        <article id="a1">
+            <h2>Llamadas realizadas a la API este mes: </h2>
+        </article>
+
+        <section id="s1">
+            <h2>XAUEUR</h2>
+            <article>
+                <h3>ORO / Euro</h3>
+                <h4>1636.81</h4>
+                <p> +0.24% +(4.35)</p>
+            </article>
+        </section>
+
+        <section id="s2">
+            <h2>XAUEUR</h2>
+            <article>
+                <h3>ORO / Euro</h3>
+                <h4>1636.81</h4>
+                <p> +0.24% +(4.35)</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
